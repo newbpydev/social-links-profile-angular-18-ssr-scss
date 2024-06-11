@@ -1,5 +1,5 @@
 {
-  "name": "solcial-links-profile",
+  "name": "social-links-profile",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:solcial-links-profile": "node dist/solcial-links-profile/server/server.mjs"
+    "serve:ssr:social-links-profile": "node dist/social-links-profile/server/server.mjs"
   },
   "private": true,
   "dependencies": {

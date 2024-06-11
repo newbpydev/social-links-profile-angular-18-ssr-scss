@@ -10,5 +10,5 @@ import { SocialProfileCardComponent } from './components/social-profile-card/soc
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'solcial-links-profile';
+  title = 'social-links-profile';
 }
