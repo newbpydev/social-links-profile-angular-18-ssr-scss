@@ -1,0 +1,47 @@
+@use '../../../assets/styles/base/mixins' as m;
+@use '../../../assets/styles/base/variables' as v;
+
+.social-profile {
+  @include m.responsive(width, 32.7rem, 38.4rem);
+  @include m.responsive(padding, 2.4rem, 4rem);
+  background-color: v.$color-neutral-dark-grey;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .image {
+      width: 8.8rem;
+      height: 8.8rem;
+      border-radius: 99rem;
+      margin-bottom: 2.4rem;
+    }
+
+    & .name {
+      font-size: v.$font-size-heading;
+      font-weight: v.$font-weight-bold;
+      margin-bottom: 4px;
+    }
+
+    & .location {
+      color: v.$color-primary-green;
+      font-weight: v.$font-weight-bold;
+    }
+  }
+
+  &__quote {}
+
+  &__links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.6rem;
+  }
+}

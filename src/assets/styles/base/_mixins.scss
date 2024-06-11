@@ -1,0 +1,19 @@
+@use './variables' as v;
+
+@mixin responsive ($property, $mobile-value, $laptop-value: none, $desktop-value: none) {
+  #{$property}: $mobile-value;
+
+  @if $laptop-value !=none {
+    @media (min-width: v.$laptop-width) {
+      #{$property}: $laptop-value;
+    }
+  }
+
+  @if $desktop-value !=none {
+    @media (min-width: v.$desktop-width) {
+      #{$property}: $desktop-value;
+    }
+  }
+
+
+}
